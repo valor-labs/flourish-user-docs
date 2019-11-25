@@ -16,6 +16,8 @@ defaultContentLanguageInSubdir = false
 # Useful when translating.
 enableMissingTranslationPlaceholders = true
 
+publishDir = "docs"
+
 disableKinds = ["taxonomy", "taxonomyTerm"]
 
 # Highlighting config
