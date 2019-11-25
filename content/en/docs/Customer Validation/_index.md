@@ -1,3 +1,11 @@
+
+---
+title: "Validation Rules"
+linkTitle: "Validation Rules"
+simple_list: true
+weight: 20
+---
+
 # Marijuana Customer Status Validation
 
 This article will walk through the identity verification process for Customers within the Flourish system, to check, whether the Customer is eligible to purchase Marijuana containing products or not.

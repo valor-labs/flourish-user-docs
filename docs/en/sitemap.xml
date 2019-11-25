@@ -78,6 +78,10 @@
   </url>
   
   <url>
+    <loc>https://vs-work.github.io/flourish-user-docs/docs/database/</loc>
+  </url>
+  
+  <url>
     <loc>https://vs-work.github.io/flourish-user-docs/docs/</loc>
     <lastmod>2019-11-25T13:31:51+02:00</lastmod>
     <xhtml:link
@@ -100,6 +104,10 @@
   <url>
     <loc>https://vs-work.github.io/flourish-user-docs/blog/releases/</loc>
     <lastmod>2019-11-25T13:31:51+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://vs-work.github.io/flourish-user-docs/docs/customer-validation/</loc>
   </url>
   
   <url>
@@ -130,6 +138,22 @@
   <url>
     <loc>https://vs-work.github.io/flourish-user-docs/docs/tasks/ponycopters/</loc>
     <lastmod>2019-11-25T13:31:51+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://vs-work.github.io/flourish-user-docs/docs/pos/payment/payment-methods/payments/</loc>
+  </url>
+  
+  <url>
+    <loc>https://vs-work.github.io/flourish-user-docs/docs/pos/payment/purchase-limits/purchase-limits-validation/</loc>
+  </url>
+  
+  <url>
+    <loc>https://vs-work.github.io/flourish-user-docs/docs/pos/payment/refunds/returns-refunds/</loc>
+  </url>
+  
+  <url>
+    <loc>https://vs-work.github.io/flourish-user-docs/docs/pos/payment/voids/voids/</loc>
   </url>
   
   <url>
