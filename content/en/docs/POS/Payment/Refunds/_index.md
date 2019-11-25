@@ -1,4 +1,9 @@
-# Returns & Refunds
+---
+title: "Returns & Refunds"
+linkTitle: "Returns & Refunds"
+simple_list: true
+weight: 20
+---
 
 Whether a purchase is made in physical store or online (via Credit Card, LINX, or CanPay) the customer has the option of returning and refunding the sale. This article provides details on the process of each of those transactions.
 

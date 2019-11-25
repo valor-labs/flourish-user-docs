@@ -1,4 +1,9 @@
-# Void Transactions
+---
+title: "Void Transactions"
+linkTitle: "Void Transactions"
+simple_list: true
+weight: 20
+---
 
 Problematic transaction can be voided—even though it hasn't settled. Since the transaction is pending and has not cleared the customer's account, it means the sale can be prevented from going through.
 

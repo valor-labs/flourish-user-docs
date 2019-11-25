@@ -1,4 +1,9 @@
-# Payments
+---
+title: "Payments"
+linkTitle: "Payments"
+simple_list: true
+weight: 20
+---
 
 The following document gives a general overview about the different integration types and Flourish payment process. To learn more about the different payment-related topics follow our [API Documentation](). It will take you to a more detailed description including interactive examples.
 

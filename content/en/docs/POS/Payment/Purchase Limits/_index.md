@@ -1,3 +1,10 @@
+---
+title: "Purchase Limits Validation"
+linkTitle: "Purchase Limits Validation"
+simple_list: true
+weight: 20
+---
+
 # Purchase Limits
 
 This guide will walk through Flourish cannabis purchase limits validation process. Recreational & Medical states all have something in common – they sell weed and each have limits too, restrictions on how much customers can buy on any given day or at any given time, to make sure Flourish legally selling them the amount mandated by law.
