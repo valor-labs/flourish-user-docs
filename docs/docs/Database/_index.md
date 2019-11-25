@@ -1,4 +1,9 @@
-# Database overview
+---
+title: "Database Overview"
+linkTitle: "Database Overview"
+simple_list: true
+weight: 20
+---
 
 This article explains Flourish database structure, database relations, and gives an idea of how to get to work with databases. In addition, this article showshow the most commonly used Tables and Schemas are arranged and describe their structure in detail.
 
