@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Goldydocs – Core Tasks</title>
@@ -1174,28 +1175,6 @@ This is a warning with a title.
 
 &lt;pre&gt;&lt;code&gt;This is the final element on the page and there should be no margin below this.
 &lt;/code&gt;&lt;/pre&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Docs: Working with Ponycopters</title>
-      <link>https://vs-work.github.io/flourish-user-docs/docs/tasks/ponycopters/</link>
-      <pubDate>Thu, 05 Jan 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://vs-work.github.io/flourish-user-docs/docs/tasks/ponycopters/</guid>
-      <description>
-        
-        
-        
-
-&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
-&lt;p&gt;This is a placeholder page. Replace it with your own content.&lt;/p&gt;
-
-&lt;/div&gt;
-
-
-&lt;p&gt;This is the section landing page.&lt;/p&gt;
 
       </description>
     </item>

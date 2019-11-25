@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Goldydocs – Flere plattformer</title>
@@ -775,26 +776,6 @@ This is a warning with a title.
     </item>
     
     <item>
-      <title>Docs: Steg for steg hjelpeartikler</title>
-      <link>https://vs-work.github.io/flourish-user-docs/no/docs/cross-platform/tutorials/</link>
-      <pubDate>Fri, 06 Jan 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://vs-work.github.io/flourish-user-docs/no/docs/cross-platform/tutorials/</guid>
-      <description>
-        
-        
-        &lt;p&gt;Dette er landingssiden til en seksjon et sted nede i seksjonshierarkiet.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Oppsummer&lt;/li&gt;
-&lt;li&gt;Seksjonen din&lt;/li&gt;
-&lt;li&gt;Her&lt;/li&gt;
-&lt;/ul&gt;
-
-      </description>
-    </item>
-    
-    <item>
       <title>Docs: Innsiden av monografer: Hvordan virker det?</title>
       <link>https://vs-work.github.io/flourish-user-docs/no/docs/cross-platform/the-inside-of-monographs-how-does-it-work/</link>
       <pubDate>Fri, 06 Jan 2017 00:00:00 +0000</pubDate>
@@ -1550,26 +1531,6 @@ This is a warning with a title.
 
 &lt;pre&gt;&lt;code&gt;This is the final element on the page and there should be no margin below this.
 &lt;/code&gt;&lt;/pre&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Docs: Praktiske eksempler</title>
-      <link>https://vs-work.github.io/flourish-user-docs/no/docs/cross-platform/examples/</link>
-      <pubDate>Thu, 05 Jan 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://vs-work.github.io/flourish-user-docs/no/docs/cross-platform/examples/</guid>
-      <description>
-        
-        
-        &lt;p&gt;Dette er landingssiden til en seksjon et sted nede i seksjonshierarkiet.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Oppsummer&lt;/li&gt;
-&lt;li&gt;Seksjonen din&lt;/li&gt;
-&lt;li&gt;Her&lt;/li&gt;
-&lt;/ul&gt;
 
       </description>
     </item>

@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Goldydocs – Håndtering av innhold</title>
@@ -1150,26 +1151,6 @@ This is a warning with a title.
 
 &lt;pre&gt;&lt;code&gt;This is the final element on the page and there should be no margin below this.
 &lt;/code&gt;&lt;/pre&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Docs: Steg for steg hjelpeartikler</title>
-      <link>https://vs-work.github.io/flourish-user-docs/no/docs/content-management/tutorials/</link>
-      <pubDate>Wed, 04 Jan 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://vs-work.github.io/flourish-user-docs/no/docs/content-management/tutorials/</guid>
-      <description>
-        
-        
-        &lt;p&gt;Dette er landingssiden til en seksjon et sted nede i seksjonshierarkiet.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Oppsummer&lt;/li&gt;
-&lt;li&gt;Seksjonen din&lt;/li&gt;
-&lt;li&gt;Her&lt;/li&gt;
-&lt;/ul&gt;
 
       </description>
     </item>
