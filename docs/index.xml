@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Goldydocs – Goldydocs</title>
+    <title>Goldydocs – Flourish Documentation</title>
     <link>https://vs-work.github.io/flourish-user-docs/</link>
-    <description>Recent content on Goldydocs</description>
+    <description>Recent content in Flourish Documentation on Goldydocs</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 25 Nov 2019 13:31:51 +0200</lastBuildDate>
+    <lastBuildDate>Mon, 25 Nov 2019 16:02:54 +0200</lastBuildDate>
     
 	  <atom:link href="https://vs-work.github.io/flourish-user-docs/index.xml" rel="self" type="application/rss+xml" />
     
