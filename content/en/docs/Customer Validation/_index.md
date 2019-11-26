@@ -1,4 +1,3 @@
-
 ---
 title: "Validation Rules"
 linkTitle: "Validation Rules"
