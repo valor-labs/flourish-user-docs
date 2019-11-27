@@ -23,8 +23,16 @@
   </url>
   
   <url>
+    <loc>https://vs-work.github.io/flourish-user-docs/docs/flourish-api/</loc>
+  </url>
+  
+  <url>
     <loc>https://vs-work.github.io/flourish-user-docs/blog/news/</loc>
+<<<<<<< Updated upstream
     <lastmod>2019-11-25T13:31:51+02:00</lastmod>
+=======
+    <lastmod>2019-11-26T16:23:39+02:00</lastmod>
+>>>>>>> Stashed changes
   </url>
   
   <url>
@@ -59,17 +67,29 @@
   
   <url>
     <loc>https://vs-work.github.io/flourish-user-docs/blog/2018/10/06/easy-documentation-with-docsy/</loc>
+<<<<<<< Updated upstream
     <lastmod>2019-11-25T13:31:51+02:00</lastmod>
+=======
+    <lastmod>2019-11-26T16:23:39+02:00</lastmod>
+>>>>>>> Stashed changes
   </url>
   
   <url>
     <loc>https://vs-work.github.io/flourish-user-docs/blog/2018/10/06/the-second-blog-post/</loc>
+<<<<<<< Updated upstream
     <lastmod>2019-11-25T13:31:51+02:00</lastmod>
+=======
+    <lastmod>2019-11-26T16:23:39+02:00</lastmod>
+>>>>>>> Stashed changes
   </url>
   
   <url>
     <loc>https://vs-work.github.io/flourish-user-docs/blog/2018/01/04/another-great-release/</loc>
+<<<<<<< Updated upstream
     <lastmod>2019-11-25T13:31:51+02:00</lastmod>
+=======
+    <lastmod>2019-11-26T16:23:39+02:00</lastmod>
+>>>>>>> Stashed changes
   </url>
   
   <url>
@@ -99,7 +119,7 @@
   
   <url>
     <loc>https://vs-work.github.io/flourish-user-docs/</loc>
-    <lastmod>2019-11-25T16:49:49+02:00</lastmod>
+    <lastmod>2019-11-26T16:23:39+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="no"
