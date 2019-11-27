@@ -7,4 +7,4 @@ menu:
     weight: 20
 ---
 
-{{< oai-spec url="http://petstore.swagger.io/v2/swagger.json" api_key="special-key" >}}
+{{<oai-spec url="https://valor-software.com/flourish-api-doc/spec.json" api_key="special-key" >}}

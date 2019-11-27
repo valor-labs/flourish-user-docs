@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="generator" content="Hugo 0.54.0" />
+<meta name="generator" content="Hugo 0.57.2" />
 
 <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
 
@@ -25,9 +25,7 @@
 <meta property="og:description" content="A Flourish Documentation example site" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://vs-work.github.io/flourish-user-docs/docs/pos/payment/purchase-limits/" />
-
-<meta property="og:updated_time" content="2019-11-25T17:14:11&#43;02:00"/><meta property="og:site_name" content="Flourish Docs" />
-
+<meta property="og:site_name" content="Flourish Docs" />
 <meta itemprop="name" content="Purchase Limits Validation">
 <meta itemprop="description" content="A Flourish Documentation example site">
 
@@ -195,6 +193,29 @@
 
 <ul class="td-sidebar-nav__section pr-md-3">
   <li class="td-sidebar-nav__section-title">
+    <a  href="/flourish-user-docs/docs/database/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Database Overview</a>
+  </li>
+  <ul>
+    <li class="collapse " id="flourish-user-docs-docs-database">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
     <a  href="/flourish-user-docs/docs/flourish-api/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Flourish API</a>
   </li>
   <ul>
@@ -222,29 +243,6 @@
   </li>
   <ul>
     <li class="collapse " id="flourish-user-docs-docs-customer-validation">
-      
-      
-      
-    </li>
-  </ul>
-</ul>
-
-      
-      
-      
-      
-
-
-
-
-
-
-<ul class="td-sidebar-nav__section pr-md-3">
-  <li class="td-sidebar-nav__section-title">
-    <a  href="/flourish-user-docs/docs/database/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Database Overview</a>
-  </li>
-  <ul>
-    <li class="collapse " id="flourish-user-docs-docs-database">
       
       
       
@@ -577,16 +575,16 @@
 <span style="color:#000;font-weight:bold">]</span></code></pre></div>
 <p>SQL to get Facility-level limits information:</p>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#204a87;font-weight:bold">select</span>
-    <span style="color:#000">integration_purchase_limit_id</span><span style="color:#000;font-weight:bold">,</span>
-    <span style="color:#000">name</span><span style="color:#000;font-weight:bold">,</span>
-    <span style="color:#000">med_limit</span><span style="color:#000;font-weight:bold">,</span>
+	<span style="color:#000">integration_purchase_limit_id</span><span style="color:#000;font-weight:bold">,</span>
+	<span style="color:#000">name</span><span style="color:#000;font-weight:bold">,</span>
+	<span style="color:#000">med_limit</span><span style="color:#000;font-weight:bold">,</span>
     <span style="color:#000">rec_limit</span><span style="color:#000;font-weight:bold">,</span>
     <span style="color:#000">uom_id</span>
 <span style="color:#204a87;font-weight:bold">from</span>
-    <span style="color:#000">common</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">integration_purchase_limit</span> <span style="color:#000">ipl</span>
+	<span style="color:#000">common</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">integration_purchase_limit</span> <span style="color:#000">ipl</span>
     <span style="color:#204a87;font-weight:bold">join</span> <span style="color:#000">facility_integration</span> <span style="color:#000">fi</span> <span style="color:#204a87;font-weight:bold">on</span> <span style="color:#000">fi</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">integration_id</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">ipl</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">integration_id</span>
 <span style="color:#204a87;font-weight:bold">where</span>
-    <span style="color:#000">fi</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">facility_id</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#4e9a06">&#39;&lt;FAC_ID&gt;&#39;</span><span style="color:#000;font-weight:bold">;</span></code></pre></div>
+	<span style="color:#000">fi</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">facility_id</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#4e9a06">&#39;&lt;FAC_ID&gt;&#39;</span><span style="color:#000;font-weight:bold">;</span></code></pre></div>
 <h3 id="order-level-limits-validation">Order-level limits validation</h3>
 
 <p>HandlerName: <code>GetPurchaseLimitsByOrder</code></p>
@@ -612,30 +610,30 @@
 <span style="color:#000;font-weight:bold">]</span></code></pre></div>
 <p>SQL to return Order-level limits information:</p>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#204a87;font-weight:bold">select</span>
-    <span style="color:#000">ipl</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">integration_purchase_limit_id</span><span style="color:#000;font-weight:bold">,</span>
-    <span style="color:#000">ipl</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">name</span><span style="color:#000;font-weight:bold">,</span>
-    <span style="color:#204a87;font-weight:bold">sum</span><span style="color:#000;font-weight:bold">(</span>
-        <span style="color:#204a87;font-weight:bold">CASE</span>
-        <span style="color:#204a87;font-weight:bold">WHEN</span> <span style="color:#000">ipl</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">uom_type</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#4e9a06">&#39;weight&#39;</span> <span style="color:#204a87;font-weight:bold">AND</span> <span style="color:#000">i</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">standard_qty_uom_id</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#0000cf;font-weight:bold">1</span> <span style="color:#204a87;font-weight:bold">THEN</span> <span style="color:#000">ol</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">qty</span> <span style="color:#ce5c00;font-weight:bold">*</span> <span style="color:#000">i</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">unit_weight</span> <span style="color:#ce5c00;font-weight:bold">*</span> <span style="color:#000">uw</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">conversion_factor</span>
-        <span style="color:#204a87;font-weight:bold">WHEN</span> <span style="color:#000">ipl</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">uom_type</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#4e9a06">&#39;volume&#39;</span> <span style="color:#204a87;font-weight:bold">AND</span> <span style="color:#000">i</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">standard_qty_uom_id</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#0000cf;font-weight:bold">1</span> <span style="color:#204a87;font-weight:bold">THEN</span> <span style="color:#000">ol</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">qty</span> <span style="color:#ce5c00;font-weight:bold">*</span> <span style="color:#000">i</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">unit_volume</span> <span style="color:#ce5c00;font-weight:bold">*</span> <span style="color:#000">uv</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">conversion_factor</span>
-        <span style="color:#204a87;font-weight:bold">ELSE</span> <span style="color:#000">ol</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">qty</span> <span style="color:#ce5c00;font-weight:bold">*</span> <span style="color:#000">usq</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">conversion_factor</span>
-        <span style="color:#204a87;font-weight:bold">END</span>
-    <span style="color:#000;font-weight:bold">)</span> <span style="color:#000">qty</span>
+	<span style="color:#000">ipl</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">integration_purchase_limit_id</span><span style="color:#000;font-weight:bold">,</span>
+	<span style="color:#000">ipl</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">name</span><span style="color:#000;font-weight:bold">,</span>
+	<span style="color:#204a87;font-weight:bold">sum</span><span style="color:#000;font-weight:bold">(</span>
+		<span style="color:#204a87;font-weight:bold">CASE</span>
+		<span style="color:#204a87;font-weight:bold">WHEN</span> <span style="color:#000">ipl</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">uom_type</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#4e9a06">&#39;weight&#39;</span> <span style="color:#204a87;font-weight:bold">AND</span> <span style="color:#000">i</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">standard_qty_uom_id</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#0000cf;font-weight:bold">1</span> <span style="color:#204a87;font-weight:bold">THEN</span> <span style="color:#000">ol</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">qty</span> <span style="color:#ce5c00;font-weight:bold">*</span> <span style="color:#000">i</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">unit_weight</span> <span style="color:#ce5c00;font-weight:bold">*</span> <span style="color:#000">uw</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">conversion_factor</span>
+		<span style="color:#204a87;font-weight:bold">WHEN</span> <span style="color:#000">ipl</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">uom_type</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#4e9a06">&#39;volume&#39;</span> <span style="color:#204a87;font-weight:bold">AND</span> <span style="color:#000">i</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">standard_qty_uom_id</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#0000cf;font-weight:bold">1</span> <span style="color:#204a87;font-weight:bold">THEN</span> <span style="color:#000">ol</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">qty</span> <span style="color:#ce5c00;font-weight:bold">*</span> <span style="color:#000">i</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">unit_volume</span> <span style="color:#ce5c00;font-weight:bold">*</span> <span style="color:#000">uv</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">conversion_factor</span>
+		<span style="color:#204a87;font-weight:bold">ELSE</span> <span style="color:#000">ol</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">qty</span> <span style="color:#ce5c00;font-weight:bold">*</span> <span style="color:#000">usq</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">conversion_factor</span>
+		<span style="color:#204a87;font-weight:bold">END</span>
+	<span style="color:#000;font-weight:bold">)</span> <span style="color:#000">qty</span>
 <span style="color:#204a87;font-weight:bold">from</span>
-    <span style="color:#000">order_hdr</span> <span style="color:#000">oh</span>
-    <span style="color:#204a87;font-weight:bold">join</span> <span style="color:#000">order_line</span> <span style="color:#000">ol</span> <span style="color:#204a87;font-weight:bold">on</span> <span style="color:#000">oh</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">order_id</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">ol</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">order_id</span>
-    <span style="color:#204a87;font-weight:bold">join</span> <span style="color:#000">item</span> <span style="color:#000">i</span> <span style="color:#204a87;font-weight:bold">on</span> <span style="color:#000">ol</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">item_id</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">i</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">item_id</span>
-    <span style="color:#204a87;font-weight:bold">join</span> <span style="color:#000">uom</span> <span style="color:#000">usq</span> <span style="color:#204a87;font-weight:bold">on</span> <span style="color:#000">i</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">standard_qty_uom_id</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">u</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">uom_id</span>
-    <span style="color:#204a87;font-weight:bold">left</span> <span style="color:#204a87;font-weight:bold">outer</span> <span style="color:#204a87;font-weight:bold">join</span> <span style="color:#000">uom</span> <span style="color:#000">uw</span> <span style="color:#204a87;font-weight:bold">on</span> <span style="color:#000">i</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">weight_uom_id</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">uw</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">uom_id</span>
-    <span style="color:#204a87;font-weight:bold">left</span> <span style="color:#204a87;font-weight:bold">outer</span> <span style="color:#204a87;font-weight:bold">join</span> <span style="color:#000">uom</span> <span style="color:#000">uv</span> <span style="color:#204a87;font-weight:bold">on</span> <span style="color:#000">i</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">volume_uom_id</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">uw</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">uom_id</span>
-    <span style="color:#204a87;font-weight:bold">join</span> <span style="color:#000">item_category_integration</span> <span style="color:#000">ici</span> <span style="color:#204a87;font-weight:bold">on</span> <span style="color:#000">i</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">item_category_id</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">ici</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">item_category_id</span>
-    <span style="color:#204a87;font-weight:bold">join</span> <span style="color:#000">common</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">integration_item_category</span> <span style="color:#000">iic</span> <span style="color:#204a87;font-weight:bold">on</span> <span style="color:#000">ici</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">integration_item_category_id</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">iic</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">integration_item_catgory_id</span>
-    <span style="color:#204a87;font-weight:bold">join</span> <span style="color:#000">common</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">integration_purchase_limit</span> <span style="color:#000">ipl</span> <span style="color:#204a87;font-weight:bold">on</span> <span style="color:#000">iic</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">integration_purchase_limit_id</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">ipl</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">integration_purchase_limit_id</span>
+	<span style="color:#000">order_hdr</span> <span style="color:#000">oh</span>
+	<span style="color:#204a87;font-weight:bold">join</span> <span style="color:#000">order_line</span> <span style="color:#000">ol</span> <span style="color:#204a87;font-weight:bold">on</span> <span style="color:#000">oh</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">order_id</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">ol</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">order_id</span>
+	<span style="color:#204a87;font-weight:bold">join</span> <span style="color:#000">item</span> <span style="color:#000">i</span> <span style="color:#204a87;font-weight:bold">on</span> <span style="color:#000">ol</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">item_id</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">i</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">item_id</span>
+	<span style="color:#204a87;font-weight:bold">join</span> <span style="color:#000">uom</span> <span style="color:#000">usq</span> <span style="color:#204a87;font-weight:bold">on</span> <span style="color:#000">i</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">standard_qty_uom_id</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">u</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">uom_id</span>
+	<span style="color:#204a87;font-weight:bold">left</span> <span style="color:#204a87;font-weight:bold">outer</span> <span style="color:#204a87;font-weight:bold">join</span> <span style="color:#000">uom</span> <span style="color:#000">uw</span> <span style="color:#204a87;font-weight:bold">on</span> <span style="color:#000">i</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">weight_uom_id</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">uw</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">uom_id</span>
+	<span style="color:#204a87;font-weight:bold">left</span> <span style="color:#204a87;font-weight:bold">outer</span> <span style="color:#204a87;font-weight:bold">join</span> <span style="color:#000">uom</span> <span style="color:#000">uv</span> <span style="color:#204a87;font-weight:bold">on</span> <span style="color:#000">i</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">volume_uom_id</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">uw</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">uom_id</span>
+	<span style="color:#204a87;font-weight:bold">join</span> <span style="color:#000">item_category_integration</span> <span style="color:#000">ici</span> <span style="color:#204a87;font-weight:bold">on</span> <span style="color:#000">i</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">item_category_id</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">ici</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">item_category_id</span>
+	<span style="color:#204a87;font-weight:bold">join</span> <span style="color:#000">common</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">integration_item_category</span> <span style="color:#000">iic</span> <span style="color:#204a87;font-weight:bold">on</span> <span style="color:#000">ici</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">integration_item_category_id</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">iic</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">integration_item_catgory_id</span>
+	<span style="color:#204a87;font-weight:bold">join</span> <span style="color:#000">common</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">integration_purchase_limit</span> <span style="color:#000">ipl</span> <span style="color:#204a87;font-weight:bold">on</span> <span style="color:#000">iic</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">integration_purchase_limit_id</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">ipl</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">integration_purchase_limit_id</span>
 <span style="color:#204a87;font-weight:bold">where</span>
-    <span style="color:#000">oh</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">order_id</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#ce5c00;font-weight:bold">?</span>
+	<span style="color:#000">oh</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">order_id</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#ce5c00;font-weight:bold">?</span>
 <span style="color:#204a87;font-weight:bold">group</span> <span style="color:#204a87;font-weight:bold">by</span>
-    <span style="color:#000">oh</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">customer_id</span><span style="color:#000;font-weight:bold">,</span>
-    <span style="color:#000">ipl</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">integration_purchase_limit_id</span><span style="color:#000;font-weight:bold">;</span></code></pre></div>
+	<span style="color:#000">oh</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">customer_id</span><span style="color:#000;font-weight:bold">,</span>
+	<span style="color:#000">ipl</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">integration_purchase_limit_id</span><span style="color:#000;font-weight:bold">;</span></code></pre></div>
 <h2 id="database-reference">Database reference</h2>
 
 <p>Puchase Limits database entries are store inside the <strong>Common</strong> database. To get more information on database structure and relations, please, follow to the [General Database Information]() guide.</p>
@@ -857,7 +855,7 @@
 
 
 
-<script src="/flourish-user-docs/js/main.min.a0caaf8ddcf8cdae392ab5d612c0664cd6fda5dd328ad686856332cfd9b70e29.js" integrity="sha256-oMqvjdz4za45KrXWEsBmTNb9pd0yitaGhWMyz9m3Dik=" crossorigin="anonymous"></script>
+<script src="/flourish-user-docs/js/main.min.ab97b3f0c538c77f23b0c1cbd9a4026ece3a77ff4a19f1dfbbca6ef56b69acf5.js" integrity="sha256-q5ez8MU4x38jsMHL2aQCbs46d/9KGfHfu8pu9WtprPU=" crossorigin="anonymous"></script>
 
 
 
