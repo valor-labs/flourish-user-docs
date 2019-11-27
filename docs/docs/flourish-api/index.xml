@@ -1,11 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Flourish Docs – Flourish API</title>
     <link>https://vs-work.github.io/flourish-user-docs/docs/flourish-api/</link>
     <description>Recent content in Flourish API on Flourish Docs</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 27 Nov 2019 15:08:16 +0200</lastBuildDate>
     
 	  <atom:link href="https://vs-work.github.io/flourish-user-docs/docs/flourish-api/index.xml" rel="self" type="application/rss+xml" />
     
