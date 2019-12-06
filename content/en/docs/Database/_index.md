@@ -116,7 +116,7 @@ Harvests are similar to groups, they represent the same thing: a grouping of pla
 
 **Note:** Harvests are a different entity than groups.
 
-**Things to know:**
+**Things good to know:**
 
 - A harvest can contain multiple groups
 - A harvest can contain multiple strains
